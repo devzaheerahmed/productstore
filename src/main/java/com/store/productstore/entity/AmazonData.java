@@ -6,10 +6,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "amazondata")
 public class AmazonData {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
     @Column(name = "producttitle")
     private String productTitle;

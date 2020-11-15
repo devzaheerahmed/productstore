@@ -13,9 +13,7 @@ public class ProductstoreApplication extends SpringBootServletInitializer {
 	protected SpringApplicationBuilder configure (SpringApplicationBuilder builder) {
 		return builder.sources(ProductstoreApplication.class);
 	}
-
 	public static void main(String[] args) {
 		SpringApplication.run(ProductstoreApplication.class, args);
 	}
-
 }
